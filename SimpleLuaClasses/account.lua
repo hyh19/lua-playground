@@ -15,3 +15,5 @@ end
 -- create and use an Account
 acc = Account:create(1000)
 acc:withdraw(100)
+
+print(acc.balance)

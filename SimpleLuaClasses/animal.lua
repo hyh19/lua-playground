@@ -41,3 +41,7 @@ end
 fido = Dog("Fido")
 felix = Cat("Felix", "Tabby")
 leo = Lion("Leo", "African")
+
+print(fido)
+print(felix)
+print(leo)
