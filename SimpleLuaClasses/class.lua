@@ -32,7 +32,8 @@ function class(base, init)
         return obj
     end
     c.init = init
-    c.is_a = function(self, klass)
+
+    function c:is_a(klass)
         local m = getmetatable(self)
         while m do
             if m == klass then
@@ -42,6 +43,7 @@ function class(base, init)
         end
         return false
     end
+
     setmetatable(c, mt)
     return c
 end
